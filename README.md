@@ -16,3 +16,5 @@
 ![image](https://github.com/user-attachments/assets/096a5d5d-f3eb-46d0-9206-dcf6025ae4a9)
 # Crop Planning
 ![image](https://github.com/user-attachments/assets/f79467fc-a7f0-4db6-b827-cf7549224eef)
+# Farmer Dashboard
+![WhatsApp Image 2025-03-31 at 13 13 53_40f80326](https://github.com/user-attachments/assets/889e58ec-c2de-43a8-a886-3cc32d9eb222)
