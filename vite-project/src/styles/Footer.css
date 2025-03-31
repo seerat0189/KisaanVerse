@@ -1,0 +1,14 @@
+.kisaan-footer {
+    background: #1a472a;
+    color: white;
+    padding: 3rem 8%;
+    text-align: center;
+  }
+  
+  .kisaan-footer h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .kisaan-footer p {
+    margin: 0.5rem 0;
+  }

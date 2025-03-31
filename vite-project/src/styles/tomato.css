@@ -1,0 +1,118 @@
+/* General Page Styling */
+.tomato-page {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    width: 100vw; /* Ensures full viewport width */
+}
+
+/* Container */
+.tomato-page .container {
+    width: 90vw; /* 90% of the viewport width */
+    max-width: 1200px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+
+/* Header */
+.tomato-page .header {
+    text-align: center;
+    padding: 15px 0;
+    background: #d32f2f;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    width: 100%;
+}
+
+.tomato-page .header h1 {
+    margin: 0;
+    font-size: 24px;
+    margin-right: 35%;
+}
+
+/* Product Section */
+.tomato-page .product-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #eee;
+}
+
+.tomato-page .product-image img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tomato-page .product-info {
+    margin-left: 30px;
+}
+
+.tomato-page .product-info h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tomato-page .product-info p {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.tomato-page .price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+/* Nutrition Section */
+.tomato-page .nutrition-section {
+    padding: 20px;
+    background: #f5f5f5;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.tomato-page .nutrition-section h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tomato-page .nutrition-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.tomato-page .nutrition-section li {
+    font-size: 16px;
+    color: #555;
+    padding: 5px 0;
+}
+
+/* Back Button */
+.tomato-page .back-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tomato-page .back-button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background: #d32f2f;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.tomato-page .back-button:hover {
+    background: #b71c1c;
+}

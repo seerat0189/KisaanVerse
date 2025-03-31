@@ -1,0 +1,180 @@
+/* Main Content Styles */
+.section {
+    padding: 6rem 8%;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    color: #1a472a;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 80vh;
+    padding: 5rem 8%;
+    background: linear-gradient(to right, #f8fff0 60%, #e4f5d4 40%);
+  }
+  
+  .hero-content {
+    padding-right: 3rem;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    color: #1a472a;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #2d3a1e;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 15px 15px 0 #1a472a;
+  }
+  
+  /* About Section */
+  .about-section {
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .about-content {
+    color: #333;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Marketplace Section */
+  .marketplace-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+  
+  .market-card {
+    border: 3px solid #1a472a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .market-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .market-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Action Sections */
+  .action-section {
+    text-align: center;
+    padding: 6rem 8%;
+    margin: 4rem 0;
+  }
+  
+  .disease-section {
+    background: #1a472a;
+    color: white;
+  }
+  
+  .crop-section {
+    background: #ffd700;
+    color: #1a472a;
+  }
+  
+  /* NGO Section */
+  .ngo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  
+  .ngo-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .ngo-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .ngo-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+    }
+    
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+    
+    .hero-image {
+      height: 300px;
+    }
+    
+    .marketplace-grid,
+    .ngo-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+    }
+  }
+  
+  .action-btn {
+    background: #ffd700;
+    color: #1a472a;
+    padding: 1.5rem 4rem;
+    border-radius: 35px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    border: none;
+  }
+  
+  .action-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+  }
+  
+  .crop-section .action-btn {
+    background: #1a472a;
+    color: white;
+  }
