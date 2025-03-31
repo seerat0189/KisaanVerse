@@ -1,0 +1,309 @@
+{
+	"id": "b0b7da0425e0645c09fdf9503529e123",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.26",
+	"solcLongVersion": "0.8.26+commit.8a97fa7a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/BlockMaster.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >=0.8.2 <0.9.0;\r\n\r\nstruct AdminItem {\r\n    string itemTitle;\r\n    uint startingPrice;\r\n    bool auctionClosed;\r\n}\r\n\r\nstruct AdminUser {\r\n    string userName;\r\n    address payable userWallet;\r\n    // uint userBid;\r\n}\r\n\r\nstruct AdminBid {\r\n    address bidderWallet;\r\n    uint bidPlaced;\r\n}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			},
+			"remappings": []
+		}
+	},
+	"output": {
+		"sources": {
+			"contracts/BlockMaster.sol": {
+				"ast": {
+					"absolutePath": "contracts/BlockMaster.sol",
+					"exportedSymbols": {
+						"AdminBid": [
+							18
+						],
+						"AdminItem": [
+							8
+						],
+						"AdminUser": [
+							13
+						]
+					},
+					"id": 19,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.8",
+								".2",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "39:31:0"
+						},
+						{
+							"canonicalName": "AdminItem",
+							"id": 8,
+							"members": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "itemTitle",
+									"nameLocation": "105:9:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "98:16:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "98:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "startingPrice",
+									"nameLocation": "126:13:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "121:18:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "121:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 7,
+									"mutability": "mutable",
+									"name": "auctionClosed",
+									"nameLocation": "151:13:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "146:18:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_bool",
+										"typeString": "bool"
+									},
+									"typeName": {
+										"id": 6,
+										"name": "bool",
+										"nodeType": "ElementaryTypeName",
+										"src": "146:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_bool",
+											"typeString": "bool"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "AdminItem",
+							"nameLocation": "81:9:0",
+							"nodeType": "StructDefinition",
+							"scope": 19,
+							"src": "74:94:0",
+							"visibility": "public"
+						},
+						{
+							"canonicalName": "AdminUser",
+							"id": 13,
+							"members": [
+								{
+									"constant": false,
+									"id": 10,
+									"mutability": "mutable",
+									"name": "userName",
+									"nameLocation": "203:8:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "196:15:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 9,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "196:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 12,
+									"mutability": "mutable",
+									"name": "userWallet",
+									"nameLocation": "234:10:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 13,
+									"src": "218:26:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address_payable",
+										"typeString": "address payable"
+									},
+									"typeName": {
+										"id": 11,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "218:15:0",
+										"stateMutability": "payable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address_payable",
+											"typeString": "address payable"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "AdminUser",
+							"nameLocation": "179:9:0",
+							"nodeType": "StructDefinition",
+							"scope": 19,
+							"src": "172:98:0",
+							"visibility": "public"
+						},
+						{
+							"canonicalName": "AdminBid",
+							"id": 18,
+							"members": [
+								{
+									"constant": false,
+									"id": 15,
+									"mutability": "mutable",
+									"name": "bidderWallet",
+									"nameLocation": "305:12:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 18,
+									"src": "297:20:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 14,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "297:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 17,
+									"mutability": "mutable",
+									"name": "bidPlaced",
+									"nameLocation": "329:9:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 18,
+									"src": "324:14:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 16,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "324:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "AdminBid",
+							"nameLocation": "281:8:0",
+							"nodeType": "StructDefinition",
+							"scope": 19,
+							"src": "274:68:0",
+							"visibility": "public"
+						}
+					],
+					"src": "39:305:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,158 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "payable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "BidderRegisterMaster",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "myBidValue",
+						"type": "uint256"
+					}
+				],
+				"name": "MyBidding",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "auctionItem",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "itemTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startingPrice",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "auctionClosed",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "declareAuctionResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bidValue",
+						"type": "uint256"
+					}
+				],
+				"name": "setAuctionItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "transferBidAmount",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "winner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "bidderWallet",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "bidPlaced",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Auction.sol": "Auction"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Admin.sol": {
+			"keccak256": "0x56792cc9898fe7b5058f3b2e26e699974641e4f88cdfa5a36d4ef62c8cff6782",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://8efef49cc84b230d4d09b5dc9b9eabb3c7589f645c7a3cad254110b32ab7aed6",
+				"dweb:/ipfs/QmZGBGaURpVPZt2AQY646ekaptr4SK11F7W7yGxAPiTQgZ"
+			]
+		},
+		"contracts/Auction.sol": {
+			"keccak256": "0x4708ce102390449796f42975901260a332ebc925b0f9d936310e015e5284705d",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://602c70d19773419304cc0b895a854d271b50099c523a3a0093d75c2622410794",
+				"dweb:/ipfs/QmYp6yMz4otNwxNKuYL1ry2KrmaehuGp1XfFzsZ2Pf2kSR"
+			]
+		}
+	},
+	"version": 1
+}
