@@ -22,3 +22,5 @@
 ![WhatsApp Image 2025-03-31 at 13 13 53_40f80326](https://github.com/user-attachments/assets/889e58ec-c2de-43a8-a886-3cc32d9eb222)
 # Plant Disease Detection
 ![desiese](https://github.com/user-attachments/assets/ba75b513-c9a6-43d7-a18d-b2346ea96310)
+# Mandi Bidding System (Screenshot of contract)
+![image](https://github.com/user-attachments/assets/d826508a-9132-4ebe-8ac9-a6200a1d7dbe)
